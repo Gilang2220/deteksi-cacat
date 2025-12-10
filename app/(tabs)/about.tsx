@@ -19,7 +19,7 @@ export default function About() {
         <Text className="text-xl font-bold text-green-700">Apa ini?</Text>
         <Text className="text-gray-700 mt-3 leading-6">
           Aplikasi ini dirancang untuk mendeteksi cacat pada buah alpukat 
-          menggunakan teknologi Computer Vision dengan bantuan model YOLOv8 
+          menggunakan teknologi Computer Vision dengan bantuan model YOLOv11 
           dari Roboflow. Dibangun menggunakan Expo React Native dan TypeScript.
         </Text>
       </View>
@@ -67,44 +67,12 @@ export default function About() {
           </View>
 
           <View className="p-4 bg-green-50 rounded-2xl shadow-sm border border-green-200">
-            <Text className="font-bold text-green-700">🤖 YOLOv8 - Roboflow</Text>
+            <Text className="font-bold text-green-700">🤖 YOLOv11 - Roboflow</Text>
             <Text className="text-gray-600 mt-1">Model AI untuk deteksi cacat buah alpukat.</Text>
           </View>
         </View>
       </View>
 
-      {/* DEVELOPER CARD */}
-      {/* <View className="mt-8 bg-white p-6 rounded-3xl shadow-md items-center">
-        
-        <Image
-          source={{ uri: "https://i.ibb.co/7QpKs86/user.png" }}
-          className="w-24 h-24 rounded-full border-4 border-green-500"
-        />
-
-        <Text className="text-2xl font-bold text-green-700 mt-4">
-          Gilang Ramdhani
-        </Text>
-
-        <Text className="text-gray-600 mt-1">
-          Developer Aplikasi
-        </Text>
-
-        <View className="flex-row mt-5 space-x-4">
-          <TouchableOpacity
-            onPress={() => Linking.openURL("https://wa.me/6280000000000")}
-            className="px-4 py-2 bg-green-600 rounded-xl"
-          >
-            <Text className="text-white font-semibold">WhatsApp</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            onPress={() => Linking.openURL("https://instagram.com/yourusername")}
-            className="px-4 py-2 bg-pink-500 rounded-xl"
-          >
-            <Text className="text-white font-semibold">Instagram</Text>
-          </TouchableOpacity>
-        </View>
-      </View> */}
 
       {/* FOOTER */}
       <View className="mt-10 mb-20">
