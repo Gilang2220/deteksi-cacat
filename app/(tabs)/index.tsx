@@ -1,19 +1,25 @@
 import { View, Text, Image, TouchableOpacity, ScrollView } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Home() {
+  const navigation = useNavigation<any>(); // 'any' biar nggak error jika TypeScript
+
+  const goToDetection = () => {
+    navigation.navigate("detection"); // nama tab screen yang ingin dituju
+  };
   return (
     <ScrollView className="flex-1 bg-[#f7f9fb]">
       {/* HEADER */}
       <View className="bg-green-600 rounded-b-3xl p-8 pb-16">
-        <Text className="text-3xl font-bold text-white">Selamat Datang!</Text>
-        <Text className="text-green-100 mt-2 text-base">
+        <Text className="text-3xl font-bold text-center text-white">Selamat Datang!</Text>
+        <Text className="text-green-100 text-center mt-2 text-base">
           Aplikasi Deteksi Cacat Buah Alpukat
         </Text>
 
         {/* Hero Image dari Assets */}
         <Image
           source={require("../../assets/images/home-alpukat.jpg")}
-          className="w-full  h-48 rounded-2xl mt-6"
+          className="w-full mx-auto h-48 rounded-2xl mt-6"
           resizeMode="cover"
         />
       </View>
@@ -53,22 +59,19 @@ export default function Home() {
         </View>
 
         {/* CARD FITUR */}
-        <Text className="mt-8 text-xl font-bold text-gray-800">
+        {/* <Text className="mt-8 text-xl font-bold text-gray-800">
           Mulai Deteksi
-        </Text>
+        </Text> */}
 
-        <View className="mt-3">
-  <TouchableOpacity className="bg-green-600 p-5 rounded-2xl shadow-md mb-4">
-    <Text className="text-center text-white font-semibold text-lg">
-      Ambil Foto
-    </Text>
-  </TouchableOpacity>
-
-  <TouchableOpacity className="bg-green-100 p-5 rounded-2xl shadow-sm">
-    <Text className="text-center text-green-700 font-semibold text-lg">
-      Pilih dari Galeri
-    </Text>
-  </TouchableOpacity>
+        <View className="mt-8">
+   <TouchableOpacity
+      className="bg-green-600 p-5 rounded-2xl shadow-md mb-4"
+      onPress={goToDetection}
+    >
+      <Text className="text-center text-white font-semibold text-lg">
+        Mulai Deteksi
+      </Text>
+    </TouchableOpacity>
 </View>
 
       </View>

@@ -61,12 +61,12 @@ export default function About() {
             <Text className="text-gray-600 mt-1">Framework utama untuk membuat aplikasi mobile.</Text>
           </View>
 
-          <View className="p-4 bg-green-50 rounded-2xl shadow-sm border border-green-200">
+          <View className="p-4 mt-4 bg-green-50 rounded-2xl shadow-sm border border-green-200">
             <Text className="font-bold text-green-700">⚙️ TypeScript</Text>
             <Text className="text-gray-600 mt-1">Menambah keamanan dan stabilitas kode.</Text>
           </View>
 
-          <View className="p-4 bg-green-50 rounded-2xl shadow-sm border border-green-200">
+          <View className="p-4 mt-4 bg-green-50 rounded-2xl shadow-sm border border-green-200">
             <Text className="font-bold text-green-700">🤖 YOLOv11 - Roboflow</Text>
             <Text className="text-gray-600 mt-1">Model AI untuk deteksi cacat buah alpukat.</Text>
           </View>

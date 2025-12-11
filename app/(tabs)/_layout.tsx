@@ -11,7 +11,7 @@ export default function TabLayout() {
           borderTopWidth: 1,
           borderTopColor: "#e5e7eb",
           height: 65,
-          paddingBottom: 10,
+          paddingBottom: 1,
         },
         tabBarActiveTintColor: "#059669",
         tabBarInactiveTintColor: "#9ca3af",
@@ -23,7 +23,7 @@ export default function TabLayout() {
         options={{
           title: "Home",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="home-outline" size={22} color={color} />
+            <Ionicons name="home-outline" size={30} color={color} />
           ),
         }}
       />
@@ -32,7 +32,7 @@ export default function TabLayout() {
         options={{
           title: "Detection",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="scan-circle-outline" size={22} color={color} />
+            <Ionicons name="scan-circle-outline" size={30} color={color} />
           ),
         }}
       />
@@ -41,7 +41,7 @@ export default function TabLayout() {
         options={{
           title: "About",
           tabBarIcon: ({ color }) => (
-            <Ionicons name="information-circle-outline" size={22} color={color} />
+            <Ionicons name="information-circle-outline" size={30} color={color} />
           ),
         }}
       />
